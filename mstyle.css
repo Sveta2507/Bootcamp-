@@ -572,9 +572,9 @@ section {
 .s4_title::before {
     position: absolute;
     content: "";
-    width: 50px;
-    height: 37px;
-    background: url(./images/.png);
+    width: 64px;
+    height: 64px;
+    background: url(./images/orchestra.png);
     background-position: center;
     background-repeat: no-repeat;
     top: -50%;
@@ -679,7 +679,7 @@ section {
     content: "";
     width: 32px;
     height: 32px;
-    background: url(./images/icons/check.png);
+    background: url(./images/next.png);
     background-position: center;
     background-repeat: no-repeat;
     top: -3px;
