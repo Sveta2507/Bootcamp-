@@ -125,15 +125,16 @@ ul {
     transition: max-height 0.2s ease-out;
 }
 
-/*.header .menu-btn {*/
-    /*display: none;*/
+.header .menu-btn {
+    display: none;
+}
 
 /*label - обертка гамбургера*/
 .header .menu-icon {
     display: flex;
-    width: 70px;
+    /*width: 70px;
     border: 1px solid rgb(36, 116, 11);
-    padding: 20px;
+    padding: 20px;*/
     position: relative;
     user-select: none;
     cursor: grab;
@@ -141,12 +142,16 @@ ul {
 
 /* это спан из html - основной элемент гамбургера*/ 
 
+.header .menu-btn:checked~.menu {
+    max-height: 100%;
+}
+
 .header .menu-icon .navicon {
     display: block;
-    border: 2px solid rgb(131, 131, 18);
+    background:  rgb(131, 131, 18);
     width: 25px;
     position: relative;
-    transition: backgroung 0.2s ease-out;
+    transition: background 0.2s ease-out;
 }
 .header .menu-icon .navicon::before,
 .header .menu-icon .navicon::after {
@@ -158,17 +163,17 @@ ul {
 }
 
 .header .menu-icon .navicon::before {
-    border: 2px solid rgb(122, 82, 16);
+    background: rgb(122, 82, 16);
     top: 10px;
 }
 
 .header .menu-icon .navicon::after {
-    border: 2px solid rgb(17, 175, 101);
+    background: rgb(17, 175, 101);
     top: -10px;
 }
 
 .header .menu-btn:checked~.menu-icon .navicon {
-    border: transparent;
+    background: transparent;
 }
 
 .header .menu-btn:checked~.menu-icon .navicon::before {
@@ -179,10 +184,6 @@ ul {
 .header .menu-btn:checked~.menu-icon .navicon::after {
     transform: rotate(45deg);
     top: 0;
-}
-
-.header .menu-btn:checked~.menu {
-    max-height: 100%;
 }
 
     .s1 {
@@ -496,14 +497,16 @@ section {
     color: khaki;
 }
 
-/*.s3 {
+.s3 {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    background:  #535353 url(./images/background.png);
+    background:  #5e0d0d url(./images/smoke.png);
+    background-position: center;
     background-blend-mode: soft-light;
     width: auto;
-    padding: 100px 0;
+    padding: 100px 0px;
+    padding-bottom: 200px;
 }
 
 .amt-carousel-hider {
@@ -547,7 +550,7 @@ section {
     top: 10px;
     left: 0px;
     background-color: yellow;
-}*/
+}
 
 .s4 {
     display: flex;
@@ -571,7 +574,7 @@ section {
     content: "";
     width: 50px;
     height: 37px;
-    background: url(./images/icons/icon4.png);
+    background: url(./images/.png);
     background-position: center;
     background-repeat: no-repeat;
     top: -50%;
