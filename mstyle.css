@@ -581,6 +581,14 @@ section {
     left: 43%;
 }
 
+.s4_images {
+    background: url(./images/color.png);
+    width: auto;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .s4_list {
     display: flex;
     flex-flow: column;
