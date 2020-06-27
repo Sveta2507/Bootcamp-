@@ -90,7 +90,7 @@ a {
 
 .menu {
     font-weight: bold;
-    padding: 26px 0;
+    /* padding: 26px 0; */
 }
 
 .menu li:last-child {
@@ -164,6 +164,7 @@ a {
     display: block;
     content: "";
     width: 100%;
+    height: 100%;
     transition: all 0.2s ease-out;
 }
 
